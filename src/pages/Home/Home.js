@@ -1,6 +1,7 @@
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import './Home.css'
 import { useEffect , useState } from 'react';
 
@@ -40,6 +41,7 @@ export default function Home(){
                  {loading ? (<p>Loading...</p>) : handleError ? (<p>No Data to Show</p>) : (view )}
             </div>
         </div>
+        <Footer />
     </div>
   )  
 }
